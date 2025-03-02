@@ -37,9 +37,3 @@ $ pip install caer
 ## 4. Face Detection and Recognition
 - Face Detection using Haar Cascades
 - Face Recognition using OpenCV's LBPHFaceRecognizer algorithm 
-
-# Credits
-The images in the [Photos](https://github.com/jasmcaus/opencv-course/tree/master/Resources/Photos) and [Videos](https://github.com/jasmcaus/opencv-course/tree/master/Resources/Videos) folders were downloaded from [Unsplash](http://unsplash.com) and [Pixabay](http://pixabay.com), unless otherwise mentioned.
-
-
-The images in the [Faces](https://github.com/jasmcaus/opencv-course/tree/master/Resources/Faces) folder were procurred from a [repo](https://www.kaggle.com/dansbecker/5-celebrity-faces-dataset) on Kaggle.
