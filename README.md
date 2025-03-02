@@ -37,9 +37,6 @@ $ pip install caer
 ## 4. Face Detection and Recognition
 - Face Detection using Haar Cascades
 - Face Recognition using OpenCV's LBPHFaceRecognizer algorithm 
-    
-## 5. Capstone: Deep Computer Vision
-- Building a Deep Computer Vision model to classify between the characters in the popular TV series The Simpsons
 
 # Credits
 The images in the [Photos](https://github.com/jasmcaus/opencv-course/tree/master/Resources/Photos) and [Videos](https://github.com/jasmcaus/opencv-course/tree/master/Resources/Videos) folders were downloaded from [Unsplash](http://unsplash.com) and [Pixabay](http://pixabay.com), unless otherwise mentioned.
