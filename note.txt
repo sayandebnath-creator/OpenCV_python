@@ -1,0 +1,46 @@
+RESCALE VIDEO STOPPING AND MAKING PROBLEM
+
+
+
+import cv2 as cv
+
+def rescaleFrame(frame, scale=0.5):
+    # Check if the frame is not None before processing
+    if frame is None:
+        return None
+    
+    # Resize the frame based on the scale factor
+    width = int(frame.shape[1] * scale)
+    height = int(frame.shape[0] * scale)
+    dimensions = (width, height)
+    resized_frame = cv.resize(frame, dimensions, interpolation=cv.INTER_AREA)
+    return resized_frame
+
+capture = cv.VideoCapture('Videos/dog.mp4')
+
+while True:
+    isTrue, frame = capture.read()
+
+    # If frame is not read properly, exit the loop
+    if not isTrue:
+        print("End of video or error reading the frame.")
+        break
+
+    # Rescale the frame
+    frame_resized = rescaleFrame(frame)
+    
+    # If resizing failed, skip this frame
+    if frame_resized is None:
+        continue
+    
+    # Show both the original and resized video frames
+    cv.imshow('Video', frame)
+    cv.imshow('Video Resized', frame_resized)
+    
+    # If 'd' key is pressed, break the loop
+    if cv.waitKey(20) & 0xFF == ord('d'):
+        break
+
+# Release the capture and destroy all windows after the loop ends
+capture.release()
+cv.destroyAllWindows()
